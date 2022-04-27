@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">DiscGolf</string>
+    <string name="create_profil">Create profil</string>
+    <string name="add_player">Add player</string>
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation_menu"
+    app:startDestination="@id/playersFragment">
+
+    <fragment
+        android:id="@+id/playerAddFragment"
+        android:name="com.example.discgolf.screens.PlayerAddFragment">
+        <action
+            android:id="@+id/action_playerAddFragment_to_playersFragment"
+            app:destination="@id/playersFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/playersFragment"
+        android:name="com.example.discgolf.screens.PlayersFragment">
+        <action
+            android:id="@+id/action_playersFragment_to_playerAddFragment"
+            app:destination="@id/playerAddFragment" />
+    </fragment>
+</navigation>
