@@ -5,16 +5,21 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
 import android.widget.TextView
-import androidx.fragment.app.viewModels
+import androidx.fragment.app.FragmentActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.example.discgolf.R
+import com.example.discgolf.dialogs.DeleteDialogFragment
 import com.example.discgolf.room.player.Player
-import com.example.discgolf.viewmodel.PlayerViewModel
 
-class PlayerAdapter(private val playerList: List<Player>,
+class PlayerAdapter(private var playerList: List<Player>, val activity: FragmentActivity,
                     private val onDelete: (Player) -> Unit): //wprowadzilem parametr o nzawie delete, ktory
     RecyclerView.Adapter<PlayerAdapter.ViewHolder>() {      //ma wsobie playera i zwraca nic(unit lub void)
-                                                            //mosze go we fragmnciee okeslic co robi...
+                                                            //mozesz go we fragmnciee okeslic co robi...
+
+    fun update(fresPlayer: List<Player>) {
+        playerList = fresPlayer
+        notifyDataSetChanged()
+    }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val itemView =
@@ -31,8 +36,11 @@ class PlayerAdapter(private val playerList: List<Player>,
         holder.name.text = player.player
 
         holder.playerItem.setOnLongClickListener {
-            onDelete(player)
-            return@setOnLongClickListener true
+//            onDelete(player)
+            DeleteDialogFragment(action = {
+                onDelete(player)
+            }).show(activity)
+            true
         }
     }
 

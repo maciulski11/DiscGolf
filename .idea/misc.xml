@@ -5,7 +5,9 @@
       <map>
         <entry key="app/src/main/res/drawable-v24/ic_add_24.xml" value="0.131" />
         <entry key="app/src/main/res/drawable/ic_add_54.xml" value="0.1485" />
+        <entry key="app/src/main/res/drawable/rounded_button.xml" value="0.155" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.22708333333333333" />
+        <entry key="app/src/main/res/layout/dialog_delete.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_competitions_add.xml" value="0.22708333333333333" />
         <entry key="app/src/main/res/layout/fragment_player_add.xml" value="0.22708333333333333" />
         <entry key="app/src/main/res/layout/fragment_players.xml" value="0.22708333333333333" />

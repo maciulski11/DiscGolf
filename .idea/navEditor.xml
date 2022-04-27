@@ -8,13 +8,25 @@
             <LayoutPositions>
               <option name="myPositions">
                 <map>
+                  <entry key="deleteDialogFragment">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="-2" />
+                            <option name="y" value="193" />
+                          </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
                   <entry key="playerAddFragment">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="48" />
-                            <option name="y" value="27" />
+                            <option name="x" value="2" />
+                            <option name="y" value="-197" />
                           </Point>
                         </option>
                         <option name="myPositions">
@@ -34,12 +46,17 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="-194" />
-                            <option name="y" value="23" />
+                            <option name="x" value="-280" />
+                            <option name="y" value="9" />
                           </Point>
                         </option>
                         <option name="myPositions">
                           <map>
+                            <entry key="action_playersFragment_to_deleteDialogFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
                             <entry key="action_playersFragment_to_playerAddFragment">
                               <value>
                                 <LayoutPositions />

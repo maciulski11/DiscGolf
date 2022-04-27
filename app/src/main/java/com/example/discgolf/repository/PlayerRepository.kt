@@ -26,13 +26,13 @@ class PlayerRepository(application: Application) {
             playerDao.insert(player) //wywolujemy fun z interfeujsu
     }
 
-    fun getAllPlayer(): Deferred<LiveData<List<Player>>> =
-        CoroutineScope(Dispatchers.IO).async {
-            playerDao.getAllPlayer()
-        }
-
     fun deletePlayer(player: Player) : Job=
         CoroutineScope(Dispatchers.IO).launch {
             playerDao.delete(player)
+        }
+
+    fun getAllPlayer(): Deferred<LiveData<List<Player>>> =
+        CoroutineScope(Dispatchers.IO).async {
+            playerDao.getAllPlayer()
         }
 }

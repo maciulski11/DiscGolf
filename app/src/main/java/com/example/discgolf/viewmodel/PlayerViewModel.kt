@@ -28,11 +28,11 @@ class PlayerViewModel(application: Application): AndroidViewModel(application)  
         playerReposiotry.addPlayer(player)
     }
 
-    fun getAllPlayer(): LiveData<List<Player>> = runBlocking {
-        allPlayer.await() //nie mozemy z tego skorzystac bez blokowania watku
-    }
-
     fun deletePlayer(player: Player){
         playerReposiotry.deletePlayer(player)
+    }
+
+    fun getAllPlayer(): LiveData<List<Player>> = runBlocking {
+        allPlayer.await() //nie mozemy z tego skorzystac bez blokowania watku
     }
 }

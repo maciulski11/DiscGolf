@@ -1,5 +1,6 @@
 package com.example.discgolf.screens
 
+import androidx.fragment.app.FragmentActivity
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
@@ -15,7 +16,7 @@ import com.example.discgolf.viewmodel.PlayerViewModel
 import kotlinx.android.synthetic.main.fragment_player_add.*
 import kotlinx.android.synthetic.main.fragment_players.*
 
-class PlayersFragment: BaseFragment() {
+class PlayersFragment : BaseFragment() {
     override val layout: Int = R.layout.fragment_players
 
     private lateinit var playersList: LiveData<List<Player>>
@@ -35,16 +36,17 @@ class PlayersFragment: BaseFragment() {
         //a potem zwracamy naszych wszystkich ludzi metoda
         playersList = playerViewModel.getAllPlayer()
         //nastepnie obserwujemy i mowimy co ma sie dziac, jezeli ulegna zmianie elementy w naszej liscie
-        playersList.observe(this, Observer{ player ->
-            if (player.isNotEmpty()) {
-                playerAdapter = PlayerAdapter(player, onDelete = { player ->
-                    playerViewModel.deletePlayer(player) //tutaj definiuje co wykonuje parametr przyjety
-                })                                      // w adapterze, czyli nasza fun delete w viewmodel
+        playersList.observe(this, Observer { playersList ->
 
+            //playerAdapter.update(player)
 
-                //jesli lista nie jest pusta to wysyla adapter, a anstepnie
-                recylerViewPlayers.adapter = playerAdapter //ten adapter podpianam pod recyclerView
-            }
+            playerAdapter = PlayerAdapter(playersList, requireActivity(), onDelete = { player ->
+                playerViewModel.deletePlayer(player) //tutaj definiuje co wykonuje parametr przyjety
+            })                                    // w adapterze, czyli nasza fun delete w viewmodel
+
+            //jesli lista nie jest pusta to wysyla adapter, a anstepnie
+            recylerViewPlayers.adapter = playerAdapter //ten adapter podpianam pod recyclerView
+
         })
 
         floatingActionButton.setOnClickListener {
