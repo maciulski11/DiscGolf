@@ -6,25 +6,33 @@
     android:layout_height="match_parent">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="58dp"
+        android:layout_marginTop="8dp"
         android:gravity="center"
-        android:text="Players:"
+        android:text="Competitions:"
         android:textColor="@color/black"
         android:textSize="35sp"
-        app:layout_constraintBottom_toTopOf="@+id/recylerViewPlayers"
+        app:layout_constraintBottom_toTopOf="@+id/recylerViewCompetitions"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="0dp" />
+        tools:layout_editor_absoluteX="0dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/textView" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recylerViewPlayers"
+        android:id="@+id/recylerViewCompetitions"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="45dp"
+        android:layout_marginTop="68dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintVertical_bias="0.0"
         tools:layout_editor_absoluteX="-16dp"
-        tools:listitem="@layout/item_player" />
+        tools:listitem="@layout/item_competitions" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/floatingActionButton"
@@ -32,11 +40,11 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/white"
         android:clickable="true"
+        android:focusable="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:backgroundTint="@color/white"
-        app:srcCompat="@drawable/ic_add_54"
-        android:focusable="true"/>
+        app:srcCompat="@drawable/ic_add_54" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

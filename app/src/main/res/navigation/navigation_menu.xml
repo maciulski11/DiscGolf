@@ -2,7 +2,7 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/navigation_menu"
-    app:startDestination="@id/playersFragment">
+    app:startDestination="@id/competitionsFragment">
 
     <fragment
         android:id="@+id/playerAddFragment"
@@ -17,5 +17,21 @@
         <action
             android:id="@+id/action_playersFragment_to_playerAddFragment"
             app:destination="@id/playerAddFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/competitionsAddFragment"
+        android:name="com.example.discgolf.screens.CompetitionsAddFragment"
+        android:label="CompetitionsAddFragment" >
+        <action
+            android:id="@+id/action_competitionsAddFragment_to_competitionsFragment"
+            app:destination="@id/competitionsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/competitionsFragment"
+        android:name="com.example.discgolf.screens.CompetitionsFragment"
+        android:label="CompetitionsFragment" >
+        <action
+            android:id="@+id/action_competitionsFragment_to_competitionsAddFragment"
+            app:destination="@id/competitionsAddFragment" />
     </fragment>
 </navigation>

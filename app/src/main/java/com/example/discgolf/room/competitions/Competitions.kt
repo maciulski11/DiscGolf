@@ -8,7 +8,7 @@ import androidx.room.PrimaryKey
 
 data class Competitions(
     var nameCompetitions: String,
-    var amountWells: String
+    var amountHoles: Int = 0,
 ) {
 
     //tworzenie unikatowego kodu

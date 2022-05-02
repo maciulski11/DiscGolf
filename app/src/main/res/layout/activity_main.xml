@@ -17,6 +17,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:navGraph="@navigation/navigation_menu"
-        tools:layout="@layout/fragment_players" />
+        tools:layout="@layout/fragment_competitions" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
