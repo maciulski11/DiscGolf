@@ -4,13 +4,19 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable-v24/ic_add_24.xml" value="0.131" />
+        <entry key="app/src/main/res/drawable-v24/ic_baseline_add_box_24.xml" value="0.155" />
         <entry key="app/src/main/res/drawable/ic_add_54.xml" value="0.1485" />
+        <entry key="app/src/main/res/drawable/ic_purchase_24.xml" value="0.155" />
         <entry key="app/src/main/res/drawable/rounded_button.xml" value="0.155" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.22708333333333333" />
         <entry key="app/src/main/res/layout/dialog_delete.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_competitions.xml" value="0.23802083333333332" />
         <entry key="app/src/main/res/layout/fragment_competitions_add.xml" value="0.22708333333333333" />
+        <entry key="app/src/main/res/layout/fragment_holes.xml" value="0.2234375" />
         <entry key="app/src/main/res/layout/fragment_player_add.xml" value="0.22708333333333333" />
         <entry key="app/src/main/res/layout/fragment_players.xml" value="0.22708333333333333" />
+        <entry key="app/src/main/res/layout/item_competitions.xml" value="0.23802083333333332" />
+        <entry key="app/src/main/res/layout/item_hole.xml" value="0.2234375" />
         <entry key="app/src/main/res/layout/item_player.xml" value="0.22708333333333333" />
       </map>
     </option>

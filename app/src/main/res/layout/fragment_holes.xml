@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="How many throws do you need?"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        android:gravity="center"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="6dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="620dp"
+        tools:listitem="@layout/item_hole"/>
+
+    <Button
+        android:id="@+id/startBT"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/black"
+        android:text="Start"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"/>
+
+
+</LinearLayout>

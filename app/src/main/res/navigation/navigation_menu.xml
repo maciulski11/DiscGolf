@@ -23,8 +23,8 @@
         android:name="com.example.discgolf.screens.CompetitionsAddFragment"
         android:label="CompetitionsAddFragment" >
         <action
-            android:id="@+id/action_competitionsAddFragment_to_competitionsFragment"
-            app:destination="@id/competitionsFragment" />
+            android:id="@+id/action_competitionsAddFragment_to_holeFragment"
+            app:destination="@id/holeFragment" />
     </fragment>
     <fragment
         android:id="@+id/competitionsFragment"
@@ -33,5 +33,13 @@
         <action
             android:id="@+id/action_competitionsFragment_to_competitionsAddFragment"
             app:destination="@id/competitionsAddFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/holeFragment"
+        android:name="com.example.discgolf.screens.HoleFragment"
+        android:label="HoleFragment" >
+        <action
+            android:id="@+id/action_holeFragment_to_competitionsFragment"
+            app:destination="@id/competitionsFragment" />
     </fragment>
 </navigation>

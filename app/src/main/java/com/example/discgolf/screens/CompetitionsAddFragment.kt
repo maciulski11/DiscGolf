@@ -32,7 +32,7 @@ class CompetitionsAddFragment: BaseFragment() {
 
     override fun subscribeUi() {
 
-        startBT.setOnClickListener {
+        nextBT.setOnClickListener {
             insertDataToDatabase()
         }
 
@@ -56,7 +56,7 @@ class CompetitionsAddFragment: BaseFragment() {
             Toast.makeText(requireContext(), "Successfully added", Toast.LENGTH_SHORT).show()
 
             //navigate back -> wroc do listy zawodow
-            findNavController().navigate(R.id.action_competitionsAddFragment_to_competitionsFragment)
+            findNavController().navigate(R.id.action_competitionsAddFragment_to_holeFragment)
         } else{
             Toast.makeText(requireContext(), "Please fill out name", Toast.LENGTH_SHORT).show()
         }

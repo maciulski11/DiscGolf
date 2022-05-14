@@ -107,11 +107,11 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/startBT"
+        android:id="@+id/nextBT"
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:backgroundTint="@color/black"
-        android:text="START"
+        android:text="NEXT"
         android:layout_gravity="center"
         android:layout_marginTop="50dp"/>
 

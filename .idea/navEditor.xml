@@ -8,13 +8,55 @@
             <LayoutPositions>
               <option name="myPositions">
                 <map>
-                  <entry key="deleteDialogFragment">
+                  <entry key="competitionsAddFragment">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="-2" />
-                            <option name="y" value="193" />
+                            <option name="x" value="106" />
+                            <option name="y" value="372" />
+                          </Point>
+                        </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_competitionsAddFragment_to_holeFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="competitionsFragment">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="-110" />
+                            <option name="y" value="370" />
+                          </Point>
+                        </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_competitionsFragment_to_competitionsAddFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="holeFragment">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="324" />
+                            <option name="y" value="374" />
                           </Point>
                         </option>
                       </LayoutPositions>
@@ -52,11 +94,6 @@
                         </option>
                         <option name="myPositions">
                           <map>
-                            <entry key="action_playersFragment_to_deleteDialogFragment">
-                              <value>
-                                <LayoutPositions />
-                              </value>
-                            </entry>
                             <entry key="action_playersFragment_to_playerAddFragment">
                               <value>
                                 <LayoutPositions />
